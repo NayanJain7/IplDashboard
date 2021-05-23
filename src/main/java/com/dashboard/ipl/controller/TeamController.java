@@ -23,6 +23,12 @@ public class TeamController {
 	//service class
 	@Autowired
 	private  TeamsData teamsData;
+	
+	@GetMapping("/")
+	public String greet() {
+
+		return "Good Morning";
+	}
 
 	// Return list of all teams that ever played IPL
 	@GetMapping("/team/all-teamname")
